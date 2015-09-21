@@ -1,0 +1,54 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">UC Campuses</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/UCB">
+          UC Berkeley
+        </ion-item>
+        <ion-item menu-close href="#/app/movies">
+          UC Davis
+        </ion-item>
+        <ion-item menu-close href="#/app/UCI">
+          UC Irvine
+        </ion-item>
+        <ion-item menu-close href="#/app/UCLA">
+          UC Los Angeles
+        </ion-item>
+        <ion-item menu-close href="#/app/UCM">
+          UC Merced
+        </ion-item>
+        <ion-item menu-close href="#/app/UCR">
+          UC Riverside
+        </ion-item>
+        <ion-item menu-close href="#/app/UCSD">
+          UC San Diego
+        </ion-item>
+        <ion-item menu-close href="#/app/UCSF">
+          UC San Francisco
+        </ion-item>
+        <ion-item menu-close href="#/app/UCSB">
+          UC Santa Barbara
+        </ion-item>
+        <ion-item menu-close href="#/app/UCSC">
+          UC Santa Cruz
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

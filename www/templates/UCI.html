@@ -1,0 +1,46 @@
+<ion-view view-title="UC Irvine">
+  <ion-content>
+      <div class="list card">
+	<div class="item item-avatar">
+    <img src="http://openweathermap.org/img/w/{{uc.list[2].weather[0].icon}}.png">
+    <h2>{{uc.list[2].main.temp}}°F</h2>
+    <h3>{{uc.list[2].weather[0].main}}</h3>
+  </div>
+
+ <a href="#" class="item item-icon-left">
+    <i class="icon ion-flame"></i>
+    <p>Maximum Temperature: {{uc.list[2].main.temp_max}}°F</p>
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios-snowy"></i>
+    <p>Minimum Temperature: {{uc.list[2].main.temp_min}}°F</p>
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios-sunny-outline"></i>
+    <p>Sunrise: {{uc.list[2].sys.sunrise * 1000 | date:'medium'}}</p>
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios-sunny"></i>
+    <p>Sunset: {{uc.list[2].sys.sunset * 1000 | date:'medium'}}</p>
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-ios-cloud-outline"></i>
+    <p>Cloudiness: {{uc.list[2].clouds.all}}%</p>
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-waterdrop"></i>
+    <p>Humidity: {{uc.list[2].main.humidity}}%</p>
+  </a>
+
+  <a href="#" class="item item-icon-left">
+    <i class="icon ion-speedometer"></i>
+    <p>Wind Speed: {{uc.list[2].wind.speed}}mph</p>
+  </a>
+</div>
+  </ion-content>
+</ion-view>
